@@ -1,6 +1,6 @@
-export const Note = ({note}) => {
+export const Note = (props) => {
     const {note} = props;
     return (
-        <li>{content}</li>
+        <li>{note.content}</li>
     )
 }
