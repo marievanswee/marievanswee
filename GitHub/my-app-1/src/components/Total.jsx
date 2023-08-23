@@ -1,4 +1,5 @@
-export const Total = ({parts}) => {
+export const Total = (props) => {
+    const {parts} = props
     let sum = parts.reduce(function(s, p){
         return s + p.exercises;
     }, 0);

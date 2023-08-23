@@ -1,6 +1,7 @@
 import {useState} from "react";
 
-export const PersonForm = ({persons, setPersons}) => {
+export const PersonForm = (props) => {
+    const {persons, setPersons} = props
     const [newName, setNewName] = useState('')
     const [newNumber, setNewNumber] = useState('')
 

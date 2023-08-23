@@ -1,4 +1,5 @@
-export const Persons = ({persons}) => {
+export const Persons = (props) => {
+    const {persons} = props
     return (
         <div>
             <ul>

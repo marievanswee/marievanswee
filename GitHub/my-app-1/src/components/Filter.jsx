@@ -1,6 +1,7 @@
 import {useState} from "react";
 
-export const Filter = ({setPersons, persons}) => {
+export const Filter = (props) => {
+    const {setPersons, persons} = props
     const [newFilter, setNewFilter] = useState('')
     const changeFilter = (event) => {
         setNewFilter(event.target.value);
